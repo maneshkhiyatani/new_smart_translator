@@ -1,0 +1,1 @@
+smart_translator_gui.py linguist-language=Python command="streamlit run smart_translator.py"
