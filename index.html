@@ -61,6 +61,14 @@
       color: #fff;
     }
 
+    iframe {
+      display: none;
+      width: 100%;
+      height: 600px;
+      border: none;
+      margin-top: 20px;
+    }
+
     @media(max-width: 600px) {
       header h1 {
         font-size: 2rem;
@@ -72,15 +80,21 @@
   <header>
     <h1>🌍 Smart Translator</h1>
     <p>Translate instantly between English, Hindi, Urdu & Roman Urdu — with intelligent understanding and fast results.</p>
-    <button class="btn" onclick="window.location.href='https://huggingface.co/spaces/maneshkhiyatani/smart-translator'">Try Translator</button>
+    <button class="btn" onclick="openTranslator()">Try Translator</button>
   </header>
+  
+  <!-- Embed Translator -->
+  <iframe id="translator-frame" src="https://huggingface.co/spaces/maneshkhiyatani/smart-translator"></iframe>
+  
   <footer>
     <p>Built with ❤️ by Manesh Khiyatani</p>
   </footer>
+
+  <script>
+    function openTranslator() {
+      var iframe = document.getElementById('translator-frame');
+      iframe.style.display = 'block';  // Show the iframe on button click
+    }
+  </script>
 </body>
 </html>
-
-  </footer>
-</body>
-</html>
-
