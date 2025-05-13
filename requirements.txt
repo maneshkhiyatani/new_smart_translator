@@ -1,0 +1,6 @@
+streamlit
+translate
+speechrecognition
+pytesseract
+opencv-python
+Pillow
