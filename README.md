@@ -40,4 +40,4 @@ README.md
 
 ## 🧠 Credits
 
-Built with ❤️ by [Your Name]
+Built with ❤️ by [Manesh khiyatani]
