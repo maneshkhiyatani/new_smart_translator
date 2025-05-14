@@ -7,52 +7,94 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #00c9ff, #92fe9d);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
     }
 
     header {
-      text-align: center;
-      padding: 30px;
-      background: linear-gradient(135deg, #00c9ff, #92fe9d);
-      color: white;
+      padding: 40px 20px 10px;
     }
 
     header h1 {
-      font-size: 3em;
+      font-size: 3rem;
       margin-bottom: 10px;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
     }
 
-    header p {
-      font-size: 1.2em;
+    p {
+      font-size: 1.2rem;
+      color: #f4f4f4;
+      max-width: 600px;
     }
 
-    iframe {
-      width: 100%;
-      height: 90vh;
+    .btn {
+      margin-top: 30px;
+      background-color: #fff;
+      color: #333;
+      padding: 12px 24px;
+      border-radius: 8px;
       border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #333;
+      color: #fff;
     }
 
     footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #222;
-      color: #fff;
+      position: fixed;
+      bottom: 15px;
       font-size: 0.9rem;
+      color: #fff;
+    }
+
+    iframe {
+      display: none;
+      width: 100%;
+      height: 600px;
+      border: none;
+      margin-top: 20px;
+    }
+
+    @media(max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>🌍 Smart Translator</h1>
-    <p>Translate instantly between English, Hindi, Urdu & Roman Urdu</p>
+    <p>Translate instantly between English, Hindi, Urdu & Roman Urdu — with intelligent understanding and fast results.</p>
+    <button class="btn" onclick="openTranslator()">Try Translator</button>
   </header>
-
-  <!-- 👉 Embed your HF app here -->
-  <iframe src="https://huggingface.co/spaces/maneshkhiyatani/smart-translator" allow="clipboard-write; microphone;"></iframe>
-
+  
+  <!-- Embed Translator -->
+  <iframe id="translator-frame" src="https://huggingface.co/spaces/maneshkhiyatani/smart-translator"></iframe>
+  
   <footer>
-    Made with ❤️ by Manesh Khiyatani
+    <p>Built with ❤️ by Manesh Khiyatani</p>
   </footer>
+
+  <script>
+    function openTranslator() {
+      var iframe = document.getElementById('translator-frame');
+      iframe.style.display = 'block';  // Show the iframe on button click
+    }
+  </script>
 </body>
 </html>
