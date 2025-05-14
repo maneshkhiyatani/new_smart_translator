@@ -2,90 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>🌍 Smart Translator</title>
+  <title>Smart Translator</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #00c9ff, #92fe9d);
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
       color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    main {
+      flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
+      padding: 40px 20px;
       text-align: center;
     }
-
-    header {
-      padding: 40px 20px 20px;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      color: #fff;
+    h1 {
+      font-size: 3em;
       margin-bottom: 10px;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     }
-
     p {
-      font-size: 1.2rem;
-      color: #f9f9f9;
+      font-size: 1.2em;
+      margin-bottom: 30px;
       max-width: 600px;
     }
-
     .btn {
-      margin-top: 30px;
-      background-color: #fff;
-      color: #333;
-      padding: 12px 28px;
-      border-radius: 10px;
+      padding: 15px 30px;
+      background-color: #007bff;
+      color: white;
       border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
       cursor: pointer;
-      font-size: 1.1rem;
-      font-weight: bold;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-      transition: 0.3s ease;
       text-decoration: none;
+      transition: background 0.3s ease;
     }
-
     .btn:hover {
-      background-color: #333;
-      color: #fff;
+      background-color: #0056b3;
     }
-
     footer {
-      margin-top: 40px;
-      font-size: 0.9rem;
-      color: #fff;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      .btn {
-        padding: 10px 20px;
-        font-size: 1rem;
-      }
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+      color: #555;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>🌍 Smart Translator</h1>
-    <p>Translate between English, Hindi, Urdu & Roman Urdu with intelligent understanding and fast results.</p>
-    <a href="https://huggingface.co/spaces/maneshkhiyatani/smart-translator" target="_blank" class="btn">
-      Try Translator
-    </a>
+    <h1>Smart Translator</h1>
   </header>
 
+  <main>
+    <h2>Translate instantly between English, Hindi, Urdu & Roman Urdu</h2>
+    <p>Enjoy intelligent understanding, voice and image input, and instant results — all in one smart tool.</p>
+    <a href="https://maneshkhiyatani-hf-space-url" class="btn" target="_blank">Try Translator</a>
+  </main>
+
   <footer>
-    Built with ❤️ by manesh khiyatani
+    © 2025 Smart Translator. Built with ❤️ by Manesh Khiyatani.
   </footer>
+
 </body>
 </html>
 
